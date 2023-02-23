@@ -64,8 +64,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             )?;
                         }
                     }
-                    Err(_) => {
-                        println!("\x1b[38;5;3m[WARNING] Invalid string.\x1b[m");
+                    Err(e) => {
+                        println!("\x1b[38;5;3m[WARNING] {e}.\x1b[m");
                     }
                 }
             }
