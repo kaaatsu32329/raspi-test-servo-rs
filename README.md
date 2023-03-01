@@ -25,3 +25,13 @@ pinout
 ```bash
 cargo run
 ```
+
+If you want to set range of motion manually, run like below.
+
+```bash
+cargo run -- -h 1800 -l 1200
+```
+
+## Kill process
+
+You can kill this process by `Ctrl+c`.
