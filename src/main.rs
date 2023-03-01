@@ -36,7 +36,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     std::thread::sleep(std::time::Duration::from_millis(500));
 
     for pulse in (PULSE_MIN_US..=PULSE_NEUTRAL_US).step_by(10) {
-        println!("Running: {}", pulse);
+        println!("Set PWM microsecound: {}", pulse);
         servo_pin.set_pwm(
             std::time::Duration::from_millis(PERIOD_MS),
             std::time::Duration::from_micros(pulse),
