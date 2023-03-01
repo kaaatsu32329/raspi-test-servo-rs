@@ -20,6 +20,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 pinout
 ```
 
+In this program, I suppose that the servo's signal line is connected to pin 16 (GPIO 23).
+
 ## Build and Run
 
 ```bash
